@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759fb030721ce7742b1e7aa1f7052ef3, type: 3}
+  m_Name: URP to HDRP
+  m_EditorClassIdentifier: 
+  sourceShaderName: Universal Render Pipeline/Lit
+  targetShaderName: HDRP/Lit
+  propertyPairs:
+  - sourceProperty: _BaseColor
+    targetProperty: _BaseColor
+    propertyType: 1
+  - sourceProperty: _Color
+    targetProperty: _Color
+    propertyType: 1
+  - sourceProperty: _EmissionColor
+    targetProperty: _EmissionColor
+    propertyType: 1
+  - sourceProperty: _AddPrecomputedVelocity
+    targetProperty: _AddPrecomputedVelocity
+    propertyType: 0
+  - sourceProperty: _AlphaClip
+    targetProperty: _AlphaCutoff
+    propertyType: 0
+  - sourceProperty: _AlphaToMask
+    targetProperty: _AlphaCutoffEnable
+    propertyType: 0
+  - sourceProperty: _Blend
+    targetProperty: _BlendMode
+    propertyType: 0
+  - sourceProperty: _BumpScale
+    targetProperty: _NormalScale
+    propertyType: 0
+  - sourceProperty: _Cull
+    targetProperty: _CullMode
+    propertyType: 0
+  - sourceProperty: _Cutoff
+    targetProperty: _Cutoff
+    propertyType: 0
+  - sourceProperty: _DstBlend
+    targetProperty: _DstBlend
+    propertyType: 0
+  - sourceProperty: _Metallic
+    targetProperty: _Metallic
+    propertyType: 0
+  - sourceProperty: _Smoothness
+    targetProperty: _Smoothness
+    propertyType: 0
+  - sourceProperty: _SrcBlend
+    targetProperty: _SrcBlend
+    propertyType: 0
+  - sourceProperty: _Surface
+    targetProperty: _SurfaceType
+    propertyType: 0
+  - sourceProperty: _ZWrite
+    targetProperty: _ZWrite
+    propertyType: 0
+  - sourceProperty: _BaseMap
+    targetProperty: _BaseColorMap
+    propertyType: 3
+  - sourceProperty: _BumpMap
+    targetProperty: _NormalMap
+    propertyType: 3
+  - sourceProperty: _DetailAlbedoMap
+    targetProperty: _DetailMap
+    propertyType: 3
+  - sourceProperty: _EmissionMap
+    targetProperty: _EmissiveColorMap
+    propertyType: 3
+  - sourceProperty: _MainTex
+    targetProperty: _MainTex
+    propertyType: 3
+  - sourceProperty: unity_Lightmaps
+    targetProperty: unity_Lightmaps
+    propertyType: 3
+  - sourceProperty: unity_LightmapsInd
+    targetProperty: unity_LightmapsInd
+    propertyType: 3
+  - sourceProperty: unity_ShadowMasks
+    targetProperty: unity_ShadowMasks
+    propertyType: 3
